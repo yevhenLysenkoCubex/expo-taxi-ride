@@ -35,6 +35,12 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
             backgroundColor: '#2f80ed',
          },
       ],
+      [
+         'expo-location',
+         {
+            locationAlwaysAndWhenInUsePermission: 'Allow $(PRODUCT_NAME) to use your location.',
+         },
+      ],
    ],
    experiments: {
       typedRoutes: true,
